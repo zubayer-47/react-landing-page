@@ -1,0 +1,14 @@
+.signup__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+
+.signup__box {
+  width: 900px;
+  padding: 4rem;
+  border-radius: 1.2rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.14);
+}

@@ -1,0 +1,31 @@
+.homeParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 70px);
+  position: relative;
+  z-index: 10;
+}
+.homeParent h3 {
+  font-size: 2rem;
+  color: dodgerblue;
+  font-weight: 500;
+}
+
+.homeParent p {
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.homeParent::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(229, 241, 255);
+  z-index: -1;
+}
