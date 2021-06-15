@@ -21,8 +21,7 @@ const Nav = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav d-flex justify-content-between align-items-center mr-auto">
           <li className="nav-item active">
-            {/* <span className="sr-only">(current)</span> */}
-            <NavLink className="nav-link sr-only" to="/">
+            <NavLink className="nav-link" to="/">
               Home
             </NavLink>
           </li>
