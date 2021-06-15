@@ -31,7 +31,7 @@ const inputInfos = [
   },
 ];
 
-const generateID = () => {
+export const generateID = () => {
   const randomID = Math.ceil(Math.random() * 999);
   return randomID;
 };
