@@ -19,7 +19,7 @@ const Nav = () => {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
+        <ul className="navbar-nav d-flex justify-content-between align-items-center mr-auto">
           <li className="nav-item active">
             {/* <span className="sr-only">(current)</span> */}
             <NavLink className="nav-link sr-only" to="/">
@@ -42,7 +42,9 @@ const Nav = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className='nav-link' to="/signup">Register</NavLink>
+            <NavLink className="nav-link" to="/signup">
+              Register
+            </NavLink>
           </li>
         </ul>
       </div>
