@@ -1,18 +1,12 @@
-header {
-  color: #222;
-  width: 100vw;
-  height: 70px;
+nav .container-fluid img {
+	width: 170px;
+	height: 70px;
+	object-fit: contain;
+	filter: invert(3);
 }
 
-header .container .logo img {
-  width: 170px;
-  height: 70px;
-  object-fit: contain;
-  filter: invert(3);
-}
-
-@media (min-width: 1400px) {
-  .container-lg {
-    max-width: 1720px;
-  }
+@media (min-width: 768px) {
+	.collapse > .custom {
+		margin-left: auto;
+	}
 }
