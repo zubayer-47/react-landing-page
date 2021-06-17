@@ -3,6 +3,7 @@ import React from "react";
 import RegisterImg from "../../img/register.png";
 import Input from "./Input";
 import "./Signup.css";
+import generateID from '../UniqueID'
 
 const inputInfos = [
   {
@@ -30,11 +31,6 @@ const inputInfos = [
     placeholder: "Confirm Password",
   },
 ];
-
-export const generateID = () => {
-  const randomID = Math.ceil(Math.random() * 999);
-  return randomID;
-};
 
 const Signup = () => {
   return (

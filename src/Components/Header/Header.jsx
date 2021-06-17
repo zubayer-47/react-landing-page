@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import "./Header.css";
+import Nav from './Nav'
 
 const Header = () => {
 	return (
@@ -23,47 +24,10 @@ const Header = () => {
 					<span className="navbar-toggler-icon"></span>
 				</button>
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<div className="custom">
-						<ul className="navbar-nav ml-auto mb-2 mb-lg-0">
-							<li className="nav-item">
-								<NavLink className="nav-link active" aria-current="page" to="/">
-									Home
-								</NavLink>
-							</li>
-							<li className="nav-item">
-								<NavLink className="nav-link" aria-current="page" to="/about">
-									About
-								</NavLink>
-							</li>
-							<li className="nav-item">
-								<NavLink className="nav-link" aria-current="page" to="/contact">
-									Contact
-								</NavLink>
-							</li>
-							<li className="nav-item">
-								<NavLink className="nav-link" aria-current="page" to="/login">
-									Login
-								</NavLink>
-							</li>
-							<li className="nav-item">
-								<NavLink className="nav-link" aria-current="page" to="/signup">
-									Register
-								</NavLink>
-							</li>
-						</ul>
-					</div>
+					<Nav />
 				</div>
 			</div>
 		</nav>
-
-		// <header className="bg-light">
-		//   <div className="container container-lg d-flex justify-content-between align-items-center">
-		//     <div className="logo">
-
-		//     </div>
-		//     <Nav />
-		//   </div>
-		// </header>
 	);
 };
 

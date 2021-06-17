@@ -1,6 +1,6 @@
 import React from "react";
 import Input from "../Signup/Input";
-import { generateID } from "../Signup/Signup";
+import generateID from '../UniqueID'
 import "./Contact.css";
 
 const contactItems = [
@@ -42,7 +42,7 @@ const Contact = () => {
       <div className="container my-5">
         <div className="row">
           {contactItems.map((contactItem) => (
-            <div className="col-md-4 mb-2" key={generateID()}>
+            <div className="col-md-4 mb-4" key={generateID()}>
               <div className="card bg-light">
                 <div className="card-body">
                   <div className="d-flex justify-content-*-start align-items-center">

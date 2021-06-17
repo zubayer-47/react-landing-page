@@ -3,6 +3,7 @@ import React from "react";
 import LoginImg from "../../img/login.png";
 import Input from "../Signup/Input";
 import "./Login.css";
+import generateID from '../UniqueID'
 
 const inputInfos = [
   {
@@ -17,17 +18,12 @@ const inputInfos = [
   },
 ];
 
-const generateID = () => {
-  const randomID = Math.ceil(Math.random() * 999);
-  return randomID;
-};
-
 const Signup = () => {
   return (
     <div className="login__wrapper">
       <div className="login__box bg-light">
-        <div className="row ">
-          <div className="col-md-6 text-center">
+        <div className="row">
+          <div className="col-md-6 text-center my-5">
             <img
               src={LoginImg}
               alt="register user"
@@ -42,7 +38,7 @@ const Signup = () => {
 
             <form className="mt-5">
               {inputInfos.map((inputInfo) => (
-                <div className="parent">
+                <div className="parent" key={generateID()}>
                   <div className="child1">
                       <i className={`${inputInfo.icon}`}></i>
                   </div>

@@ -1,31 +1,40 @@
-// /* eslint-disable jsx-a11y/anchor-is-valid */
-// import React from "react";
-// import { NavLink } from "react-router-dom";
-// import "./Nav.css";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Nav.css";
 
-// const Nav = () => {
-// 	return (
+const Nav = () => {
+  return (
+    <div className="custom">
+      <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <NavLink className="nav-link active" aria-current="page" to="/">
+            Home
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" aria-current="page" to="/about">
+            About
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" aria-current="page" to="/contact">
+            Contact
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" aria-current="page" to="/login">
+            Login
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" aria-current="page" to="/signup">
+            Register
+          </NavLink>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
-// 		// <nav>
-// 		// 	<ul className="d-flex justify-content-between align-items-center">
-// 		// 		<li>
-// 		// 			<NavLink to="/">Home</NavLink>
-// 		// 		</li>
-// 		// 		<li>
-// 		// 			<NavLink to="/about">About</NavLink>
-// 		// 		</li>
-// 		// 		<li>
-// 		// 			<NavLink to="/contact">Contact</NavLink>
-// 		// 		</li>
-// 		// 		<li>
-// 		// 			<NavLink to="/login">Login</NavLink>
-// 		// 		</li>
-// 		// 		<li>
-// 		// 			<NavLink to="/signup">Register</NavLink>
-// 		// 		</li>
-// 		// 	</ul>
-// 		// </nav>
-// 	);
-// };
-
-// export default Nav;
+export default Nav;
